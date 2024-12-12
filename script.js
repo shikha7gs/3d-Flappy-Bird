@@ -29,7 +29,7 @@ let birdRadius = 0.5;
 
 const loader = new GLTFLoader();
 loader.load(
-    '/flappy_bird.glb',
+    'flappy_bird.glb',
     function (gltf) {
         bird = gltf.scene;
         bird.scale.set(0.08, 0.08, 0.08);
@@ -74,10 +74,10 @@ let visibleWidth = 0;
 
 let ground, ceiling;
 
-const wingSound = new Audio('/wing.mp3');
-const pointSound = new Audio('/point.mp3');
-const dieSound = new Audio('/die.mp3');
-const swooshSound = new Audio('/swoosh.mp3');
+const wingSound = new Audio('wing.mp3');
+const pointSound = new Audio('point.mp3');
+const dieSound = new Audio('die.mp3');
+const swooshSound = new Audio('swoosh.mp3');
 
 function calculateBoundaries() {
     const distance = camera.position.z - 0;
